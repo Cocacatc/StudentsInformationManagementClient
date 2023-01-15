@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentsinformationmanagementclient.controller.ModifyCourseController">
+    <children>
+        <Label layoutX="128.0" layoutY="85.0" text="课序号：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="147.0" layoutY="136.0" text="课程：">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="144.0" layoutY="243.0" text="学分:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="numberTextField" disable="true" editable="false" layoutX="200.0" layoutY="85.0" />
+        <TextField fx:id="nameTextField" layoutX="200.0" layoutY="136.0" />
+        <TextField fx:id="creditTextField" layoutX="200.0" layoutY="243.0" />
+        <Button fx:id="confirmButton" layoutX="161.0" layoutY="304.0" mnemonicParsing="false" onAction="#onConfirmAction" text="确定">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="returnButton" layoutX="336.0" layoutY="304.0" mnemonicParsing="false" onAction="#onReturnAction" text="返回">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="227.0" layoutY="36.0" text="修改课程信息">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="432.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sdu.png" />
+            </image>
+        </ImageView>
+      <ChoiceBox fx:id="teacherChoiceBox" layoutX="200.0" layoutY="189.0" prefHeight="23.0" prefWidth="162.0" />
+      <Label layoutX="109.0" layoutY="188.0" text="授课教师：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentsinformationmanagementclient.controller.ModifyScoreController">
+   <children>
+      <Label layoutX="253.0" layoutY="56.0" text="修改成绩">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="135.0" text="学生:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="studentTextField" editable="false" layoutX="202.0" layoutY="135.0" />
+      <TextField fx:id="scoreTextField" layoutX="202.0" layoutY="218.0" />
+      <Label layoutX="141.0" layoutY="218.0" text="成绩：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmButton" layoutX="175.0" layoutY="296.0" mnemonicParsing="false" onAction="#onConfirmButton" text="确认">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnButton" layoutX="318.0" layoutY="296.0" mnemonicParsing="false" onAction="#onReturnAction" text="返回">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sdu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

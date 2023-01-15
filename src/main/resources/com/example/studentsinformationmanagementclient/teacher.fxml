@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentsinformationmanagementclient.controller.TeacherController">
+    <children>
+        <ImageView fitHeight="431.0" fitWidth="751.0" layoutY="-131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@stu6.jpg" />
+            </image>
+        </ImageView>
+        <TableView fx:id="table" layoutY="292.0" prefHeight="285.0" prefWidth="750.0" />
+        <Button fx:id="insertTeacherButton" layoutX="64.0" layoutY="62.0" mnemonicParsing="false" onAction="#onInsertTeacherAction" style="-fx-background-color: #00f2ff; -fx-background-radius: 60;" text="+">
+            <font>
+                <Font name="Bodoni MT Black" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="105.0" fitWidth="107.0" layoutX="643.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sdu.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="queryAllButton" layoutX="38.0" layoutY="238.0" mnemonicParsing="false" onAction="#onQueryAllAction" text="查看所有老师" />
+      <Button fx:id="queryTeacherButton" layoutX="505.0" layoutY="238.0" mnemonicParsing="false" onAction="#onQueryTeacherAction" text="查询" />
+      <TextField fx:id="queryTextField" layoutX="575.0" layoutY="238.0" />
+    </children>
+</AnchorPane>
